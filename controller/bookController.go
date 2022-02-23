@@ -6,7 +6,7 @@ import (
 	"trokatrokaBack/model"
 )
 
-func postBook(c *gin.Context) {
+func PostBook(c *gin.Context) {
 	var newBook model.Book
 
 	if err := c.ShouldBindJSON(&newBook); err != nil {
